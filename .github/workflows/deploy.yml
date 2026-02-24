@@ -33,5 +33,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd dd_task_mean_app
+            docker-compose down
             docker-compose pull
             docker-compose up -d
