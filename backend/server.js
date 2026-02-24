@@ -1,10 +1,6 @@
 const express = require("express");
-const cors = require("cors");
 
 const app = express();
-
-// enable CORS
-app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(express.json());
